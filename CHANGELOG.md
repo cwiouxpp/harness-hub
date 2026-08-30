@@ -32,5 +32,5 @@
 ### Fixed
 - 修正 G1 裸 token 正则误伤问题（见 Changed）。
 
-[Unreleased]: https://github.com/example/harness-hub/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/example/harness-hub/releases/tag/v0.1.0
+[Unreleased]: https://github.com/cwiouxpp/harness-hub/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/cwiouxpp/harness-hub/releases/tag/v0.1.0

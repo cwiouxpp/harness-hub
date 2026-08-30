@@ -162,7 +162,7 @@ G1 的 token 已收紧为**赋值形态**才拦（`token:` / `token=`），仅"�
 ## 📄 许可
 
 本项目基于 **Apache License 2.0** 开源，详见 [LICENSE](LICENSE)。
-Copyright © 2026 芯桥（HarnessHub）团队。
+Copyright © 2026 HarnessHub Contributors
 
 ---
-*核心文档维护：IT技术（💻）｜版本 v0.1.0｜变更见 [CHANGELOG.md](CHANGELOG.md)*
+*维护：HarnessHub 核心维护者｜版本 v0.1.0｜变更见 [CHANGELOG.md](CHANGELOG.md)*

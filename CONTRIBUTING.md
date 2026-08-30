@@ -78,4 +78,4 @@ python3 examples/../skill-library/vetted/buildguard/scripts/buildguard.py <build
 
 ---
 
-*维护：IT技术（💻）｜版本 v0.1.0*
+*维护：HarnessHub 核心维护者｜版本 v0.1.0*
