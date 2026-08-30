@@ -63,7 +63,7 @@ def test_load_memory_three_sections():
     """loadMemory: 返回身份段 / 用户段 / 持久事实段。"""
     m = load_memory()
     assert "ai-agent" in m.get("identity", "")
-    assert "指挥官" in m.get("user", "")
+    assert "admin" in m.get("user", "")
     assert len(m.get("persistent_facts", "")) > 0
 
 

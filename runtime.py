@@ -9,7 +9,7 @@ Harness 统一运行时载体（芯桥 / HarnessHub）· M1-3 运行时骨架
   ② 记忆接入层    → CMD-MEM (MEMORY.md 7 段模板 + memory/*.md 流水)
   ③ 自我改进接入层 → self-improving 沉淀建议 → 治理闸门回流
 
-接口契约：对齐大咖 M1-2 规范定稿（CMD-HARNESS-MVP-2026-08-16）
+接口契约：对齐 M1-2 规范定稿（CMD-HARNESS-MVP-2026-08-16）
 作者：HarnessHub Contributors | 2026-08-17
 """
 
@@ -59,7 +59,7 @@ STATE_FILE = os.path.join(HARNESS_DIR, "state.json")
 
 # CMD-MEM: 本 Agent 记忆主文件 + 流水目录（记忆接入层对接点）
 # P1 去硬编码化：默认 = 安装根 examples/sample_memory/（自带脱敏示例 MEMORY.md，可跑通验证）。
-# 真实环境用环境变量 HARNESS_MEM_ROOT 覆盖到各 Agent 的 workspace（笔锋/数海/慧眼/量化/棋锋/大咖等），
+# 真实环境用环境变量 HARNESS_MEM_ROOT 覆盖到各 Agent 的独立 workspace，
 # 或运行时用 set_memory_target() 切换，实现跨 Agent 记忆接入。
 _MEMORY_ROOT = os.path.expanduser(os.environ.get(
     "HARNESS_MEM_ROOT",
@@ -77,7 +77,7 @@ def resolve_memory_root(target: Optional[str] = None) -> str:
 def set_memory_target(root: str) -> str:
     """M2-2：把 Harness 记忆接入层切到指定 Agent 的 workspace（运行时配置，跨 Agent 记忆复用）。
 
-    例：set_memory_target("<某 Agent 的记忆根>"，如 workspace-quant) 后，load_memory 读量化 MEMORY.md。
+    例：set_memory_target("<某 Agent 的记忆根>") 后，load_memory 读对应 Agent 的 MEMORY.md。
 
     # 注：P1 去硬编码化前默认记忆根为 ~/.openclaw/workspace-it；现改由安装根相对派生 + env 覆盖。
 
