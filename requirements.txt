@@ -1,0 +1,7 @@
+# Harness 运行时（芯桥 / HarnessHub）依赖清单
+#
+# 零第三方依赖：运行时仅使用 Python 标准库（hashlib/json/os/re/sys/time/uuid/dataclasses/typing）。
+# 要求：Python >= 3.9（f-string、dataclass、Optional/List/Any 类型注解均可用）。
+# 无需 pip install 任何额外包；直接 `python3 runtime.py` 或 `python3 -m pytest tests/` 即可运行。
+#
+# 说明：本文件仅作依赖声明与最低版本约束记录，不含任何第三方包。
