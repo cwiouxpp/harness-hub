@@ -62,7 +62,7 @@ def test_list_skills_only_vetted_frozen():
 def test_load_memory_three_sections():
     """loadMemory: 返回身份段 / 用户段 / 持久事实段。"""
     m = load_memory()
-    assert "IT技术" in m.get("identity", "")
+    assert "ai-agent" in m.get("identity", "")
     assert "指挥官" in m.get("user", "")
     assert len(m.get("persistent_facts", "")) > 0
 

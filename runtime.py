@@ -10,7 +10,7 @@ Harness 统一运行时载体（芯桥 / HarnessHub）· M1-3 运行时骨架
   ③ 自我改进接入层 → self-improving 沉淀建议 → 治理闸门回流
 
 接口契约：对齐大咖 M1-2 规范定稿（CMD-HARNESS-MVP-2026-08-16）
-作者：IT技术 | 2026-08-17
+作者：HarnessHub Contributors | 2026-08-17
 """
 
 __version__ = "0.1.0"
